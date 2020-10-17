@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    /* font-family: sansita swashed, sans-serif; */
+    font-family: Rokkitt, sans-serif;
+}
+
+.main-container {
+    overflow: hidden;
+}
+
+h1 {
+    color: rosybrown;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem;
+    letter-spacing: 1.5px;
+    animation: titleDrop🔥 1.5s ease-out;
+}
+
+/* loaders */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* image container */
+.image-container {
+    margin: 15px 30%;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.animationslide {
+    animation: slidefromright 2.5s ease-in-out;
+}
+/* animations */
+@keyframes titleDrop🔥 {
+    0% {
+        transform: translateY(-50rem);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(1.5rem);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .image-container {
+        margin: 15px;
+    }
+}
